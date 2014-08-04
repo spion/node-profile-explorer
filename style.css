@@ -1,0 +1,43 @@
+.item.clickable {
+    cursor: pointer;
+}
+
+.expanded.clickable > .info > .label::before {
+    content: "-";
+    width: 1em;
+    display:inline-block;
+}
+.contracted.clickable > .info > .label::before {
+    content: "+";
+    width: 1em;
+    display:inline-block;
+}
+
+.info .stats div {
+    width: 5em;
+}
+
+.info div {
+    display: inline-block;
+}
+
+.info {
+    overflow: visible;
+}
+
+.expanded > .children {
+    display: block;
+}
+.contracted > .children {
+    display: none;
+}
+
+
+.depth-1, .depth-6, .depth-12 {background-color: #ffaaaa; }
+.depth-2, .depth-7, .depth-13 {background-color: #aaffaa; }
+.depth-3, .depth-8, .depth-14 {background-color: #aaaaff; }
+.depth-4, .depth-9, .depth-15 {background-color: #ffffaa; }
+.depth-5, .depth-10, .depth-16 {background-color: #ffaaff; }
+.depth-5, .depth-11, .depth-17 {background-color: #aaffff; }
+
+
